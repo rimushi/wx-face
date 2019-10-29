@@ -1,0 +1,34 @@
+.preview-tips {
+  margin: 50rpx 0  30rpx;  
+}
+
+.video {
+  margin: 20rpx auto;
+  width: 100%;
+  height: 300px;
+}
+
+page {
+  background-color: #F8F8F8;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+
+.page-body {
+  padding: 20rpx 0;
+}
+
+.page-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-area {
+  margin-top: 40rpx;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30rpx;
+}

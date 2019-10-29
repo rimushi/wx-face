@@ -1,0 +1,29 @@
+<view class="page-body">
+  <view class="page-body-wrapper">
+    <camera device-position="front" flash="off" binderror="error" style="width:100%;height:{{windowWidth}}px;"></camera>
+    <canvas wx:if="{{canvasshow}}" style="width: 100%;height:{{windowWidth}}px;position:absolute;" canvas-id="canvas"></canvas>
+    <view class="btn-area">
+      <button type="primary" bindtap="track" style='background-color:#ff5e52;' data-trackshow="{{trackshow}}">{{trackshow}}</button>
+    </view>
+    <view class="btn-area">
+      <button type="primary" bindtap="search" style='background-color:#ff5e52;'>M:N 人脸识别</button>
+    </view>    
+    <view  wx:if="{{src}}" class="preview-tips">识别结果: {{who}}</view>
+    <view wx:if="{{src}}" style='display:flex;width:100%;justify-content:center;'>
+      <image  mode="aspectFit" src="{{src}}"  style='width:50%;height:{{windowWidth/2}}px;'></image>
+      <canvas  style="width: 50%;height:{{windowWidth/2}}px;position:absolute;" canvas-id="canvasresult"></canvas>
+    </view>
+    <view class="btn-area">
+      <button type="primary" bindtap="startRecord" style='background-color:#ff5e52;'>{{faceliveness}}</button>
+    </view>
+    <!-- <view class="btn-area">
+      <button type="primary" bindtap="stopRecord" style='background-color:#ff5e52;'>结束录像</button>
+    </view>
+    <view class="btn-area">
+      <button type="primary" bindtap="faceliveness" style='background-color:#ff5e52;'>活体检测</button>
+    </view> -->
+    <view  wx:if="{{facelivenessResult}}" class="preview-tips">
+       {{facelivenessResult}}
+    </view>
+  </view>
+</view>

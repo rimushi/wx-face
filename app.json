@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/video/video",    
+    "pages/face/face",        
+    "pages/index/index",                     
+    "pages/logs/logs"        
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "face",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
